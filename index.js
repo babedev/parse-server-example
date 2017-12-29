@@ -24,6 +24,12 @@ var api = new ParseServer({
     android: {
       senderId: process.env.GCM_ID || '',
       apiKey: process.env.GCM_KEY || ''
+    },
+    ios: {
+      pfx: process.env.APNS_FILE || '',
+      passphrase: process.env.APNS_KEY || '',
+      bundleId: process.env.APNS_BUNDLE_ID || '',
+      production: false
     }
   }
 });
