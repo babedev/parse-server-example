@@ -28,7 +28,7 @@ var api = new ParseServer({
     ios: {
       pfx: process.env.APNS_FILE || '',
       passphrase: process.env.APNS_KEY || '',
-      bundleId: process.env.APNS_BUNDLE_ID || '',
+      topic: process.env.APNS_BUNDLE_ID || '',
       production: false
     }
   }
